@@ -3,8 +3,6 @@
 markdown: kramdown
 permalink: pretty
 
-url: http://jorellatraille.github.io
-
 sass:
   sass_dir: assets/css
   style: :nested
