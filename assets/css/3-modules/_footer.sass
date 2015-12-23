@@ -1,0 +1,47 @@
+footer
+    background: url(../img/hero-bg.png) center center
+    background-size: cover
+    -webkit-transform:scaleX(-1)
+    -moz-transform:scaleX(-1)
+    -ms-transform:scaleX(-1)
+    -o-transform:scaleX(-1)
+    transform: scaleX(-1)
+    +clearfix
+    
+    .lockup
+        padding: 18px 18px
+        -webkit-transform:scaleX(-1)
+        -moz-transform:scaleX(-1)
+        -ms-transform:scaleX(-1)
+        -o-transform:scaleX(-1)
+        transform: scaleX(-1)
+        
+        .logo
+            +size(50px)
+            float: left
+            margin-right: 30px
+            margin-bottom: 18px
+            
+            path
+                fill: rgba(0,0,0,0.5)
+            
+        .content-wrap
+            float: left
+
+            nav
+                a
+                    display: inline-block
+                    margin-right: 20px
+                                
+                    color: rgba(0,0,0,0.7)
+                    @extend %small-bold
+                    
+                    &:hover
+                        color: rgba(0,0,0,1)
+                        
+            .copyright
+                margin: 0
+                text-transorm: uppercase
+                font-size: 12px
+                color: rgba(0,0,0,0.5)
+        
