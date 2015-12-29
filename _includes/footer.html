@@ -4,10 +4,9 @@
         
         <div class="content-wrap">
             <nav>
-                <a href="">About Me</a>
-                <a href="">Showreel</a>
-                <a href="">Work</a>
-                <a href="">Contact</a>
+                {% for item in site.data.portfolio.menu %}
+                    <a href="{{ item.url }}">{{ item.name }}</a>
+                {% endfor %}
             </nav>
             <p class="copyright">All content copyright 2015</p>
         </div>

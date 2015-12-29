@@ -1,8 +1,4 @@
 # Build settings
-title: Jorel Latraille
-email: jlatraille@gmail.com
-description: Artist // Programmer
-
 markdown: kramdown
 permalink: pretty
 

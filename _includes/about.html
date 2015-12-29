@@ -1,6 +1,6 @@
 <section>
 
-    <h3>About Myself</h3>
+    <h3 id="about-me">About Myself</h3>
 
     <div class="face-lockup">
     
@@ -14,51 +14,22 @@
     </div>
     
     <div class="blurb">
-        <p><strong>I have spent the majority of my career in post production
-         visual effects and developing tools and software for that field.</strong>
-        <br>For almost 6 years I had the great fortune to work in 3 of the top visual
-         effects studios in London (Double Negative, Framestore and MPC) where I 
-        honed my skills as an artist.
-        <br>I then moved from post production to working for The Foundy who develop 
-        some of the software used by these companies and other industries.
-        <br>I started as a QA engineer for Mari and quickly moved into other roles, finally 
-        finding my way to my current position as a Python Developer on a Modo project 
-        for a global shoe manufacurer.</p>
+        {{ site.data.portfolio.about-blurb }}
     </div>
 
     <div class="skill-lockup">
     
-        <div class="skill-unit">
-            <div class="skill-label">Modelling</div>
-            <div class="skill-icons skill-8">
-                <span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span><span></span>
-            </div>
-        </div>
+        {% for skill in site.data.portfolio.skills %}
     
-        <div class="skill-unit">
-            <div class="skill-label">Texturing</div>
-            <div class="skill-icons skill-7">
-                <span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span><span></span>
+            <div class="skill-unit">
+                <div class="skill-label">{{ skill.name }}</div>
+                <div class="skill-icons skill-{{ skill.value }}">
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
             </div>
-        </div>
-        
-        <div class="skill-unit">
-            <div class="skill-label">Python</div>
-            <div class="skill-icons skill-9">
-                <span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span><span></span>
-            </div>
-        </div>
-        
-        <div class="skill-unit">
-            <div class="skill-label">C/C++</div>
-            <div class="skill-icons skill-4">
-                <span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span><span></span>
-            </div>
-        </div>
+    
+        {% endfor %}
     
     </div>
 

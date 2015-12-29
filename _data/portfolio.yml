@@ -1,0 +1,35 @@
+# Portfolio settings
+
+title: Jorel Latraille
+email: jlatraille@gmail.com
+description: Artist // Programmer
+
+# MENU ITEM LIST
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Showreel, url: '#showreel'}
+- {name: Work, url: '#work'}
+- {name: Contact, url: '#contact'}
+
+#SKILL LIST
+
+skills:
+- {name: Modelling, value: '8'}
+- {name: Texturing, value: '6'}
+- {name: Python, value: '8'}
+- {name: C/C++, value: '4'}
+
+#Change the site default images and content here!
+hero: 'hero-bg.jpg'
+avatar: 'face-img.png'
+about-blurb: <p><strong>I have spent the majority of my career in post production
+             visual effects and developing tools and software for that field.</strong>
+            <br>&emsp; For almost 6 years I had the good fortune to work in 3 of the large
+            production houses in London (Double Negative, Framestore and MPC) where
+             I honed my skills as an artist.
+            <br>&emsp; I then moved from post production to working for The Foundy who develop 
+            some of the software used by these companies and other industries.
+            <br>&emsp; I started as a QA engineer for Mari and quickly moved into other roles, finally 
+            finding my way to my current position as a Python Developer on a Modo project 
+            for a global shoe manufacurer.</p>

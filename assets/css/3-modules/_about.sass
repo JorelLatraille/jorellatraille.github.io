@@ -1,20 +1,15 @@
-h3
-    @extend %small-bold
-    color: $accent
-    text-align: center
-    padding: 100px 0 30px
-    
 .face-lockup
     max-width: 780px
     +display(flex) //+ is for bourbon functions
     margin: 0 auto
     +align-items(center)
-    +justify-content(space-around)
+    +justify-content(space-between)
 
     .face-img
+        background-image: url(/assets/img/face-img.png)
         +size(200px)
-        background: url(/assets/img/face-img.png)
-        order: 3
+        +order(3)
+        border-radius: 50%
 
     [class^="icon-"]
         +size(100px)
@@ -25,13 +20,13 @@ h3
             fill: $accent
 
         &.icon-pencil
-            order: 1
+            +order(1)
         &.icon-mouse
-            order: 2
+            +order(2)
         &.icon-browser
-            order: 4
+            +order(4)
         &.icon-pencil
-            order: 5
+            +order(5)
 
 @media screen and (max-width: 650px)
     .face-lockup
@@ -56,7 +51,7 @@ h3
     padding: 0 15px
     margin: 50px auto 50px
     font-size: 18px
-    text-align: center
+    text-align: justify
     font-weight: 300
     
 .skill-lockup
