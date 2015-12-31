@@ -22,14 +22,22 @@ skills:
 
 #WORK THUMB LIST
 thumbs:
-- {name: Stormer, img: 'stormer.jpg', pos: 'center center', size: '200%'}
-- {name: Stormer Wire, img: 'stormer_wire.jpg', pos: 'center center', size: '200%'}
-- {name: Abaddon, img: 'abaddon.png', pos: 'center 20%', size: '200%'}
-- {name: Abaddon Wire, img: 'abaddon_wire.png', pos: 'center 20%', size: '200%'}
-- {name: Brock, img: 'brock.png', pos: 'center 16%', size: '200%'}
-- {name: Brock Wire, img: 'brock_wire.png', pos: 'center 16%', size: '200%'}
-- {name: Bolex, img: 'bolex.jpg', pos: 'center 2%', size: '200%'}
-- {name: Bolex Wire, img: 'bolex_wire.jpg', pos: 'center 2%', size: '200%'}
+- {name: Stormer, img: 'stormer-thumb.jpg', folder: 'stormer', 
+pos: 'center center', size: '200%'}
+- {name: Stormer Wire, img: 'stormer-wire-thumb.jpg', folder: 'stormer-wire',
+pos: 'center center', size: '200%'}
+- {name: Abaddon, img: 'abaddon-thumb.jpg', folder: 'abaddon', 
+pos: 'center 20%', size: '200%'}
+- {name: Abaddon Wire, img: 'abaddon-wire-thumb.jpg', folder: 'abaddon-wire',
+pos: 'center 20%', size: '200%'}
+- {name: Brock, img: 'brock-thumb.jpg', folder: 'brock',
+pos: 'center 16%', size: '200%'}
+- {name: Brock Wire, img: 'brock-wire-thumb.jpg', folder: 'brock-wire',
+pos: 'center 16%', size: '200%'}
+- {name: Bolex, img: 'bolex-thumb.jpg', folder: 'bolex',
+pos: 'center 2%', size: '200%'}
+- {name: Bolex Wire, img: 'bolex-wire-thumb.jpg', folder: 'bolex-wire',
+pos: 'center 2%', size: '200%'}
 
 #Change the site default images and content here!
 hero: 'hero-bg.jpg'
