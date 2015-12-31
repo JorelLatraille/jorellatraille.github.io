@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
   smoothScroll(500);
+  workBelt();
 
 });
 
@@ -18,3 +19,34 @@ function smoothScroll (duration) {
         }
     });
 }
+
+function workBelt(){
+
+    $('.thumb-unit').click(function() {
+        $('.work-belt').css('left', '-100%');
+        $('.work-container').show();
+    });
+    
+    $('.work-return').click(function() {
+        $('.work-belt').css('left', '0%');
+        $('.work-container').hide(800);
+    });
+    
+}
+
+//~var preventClick = false;
+//~
+//~$('#ThisLink').click(function(e) {
+    //~$(this)
+        //~.css('cursor', 'default')
+        //~.css('text-decoration', 'none')
+        //~
+    //~if (!preventClick) {
+        //~$(this).html($(this).html() + 'lalala');
+    //~}
+    //~
+    //~preventClick = true;
+    //~
+    //~return false;
+    //~
+//~});

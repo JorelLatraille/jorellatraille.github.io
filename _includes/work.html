@@ -1,24 +1,35 @@
-<section class="alt-section">
+<section class="alt-section section-work">
 
-    <h3 id="#work">Work</h3>
+    <h3 id="work">Work</h3>
     
-    <div class="thumb-container">
+    <div class="work-belt">
     
-        {% for thumb in site.data.portfolio.thumbs %}
-    
-        <a href="" class="thumb-unit" 
-            style="background-image: url(/assets/img/work/{{thumb.img}});
-                    background-position: {{thumb.pos}};
-                    background-size: {{thumb.size}}">
-            
-            <div class="thumb-overlay">
-                <strong>{{thumb.name}}</strong>
-                <div class="zoom-icon"></div>
+        <div class="thumb-wrap">
+            <div class="thumb-container">
+                {% for thumb in site.data.portfolio.thumbs %}
+                <a class="thumb-unit" 
+                    style="background-image: url(/assets/img/work/{{thumb.img}});
+                            background-position: {{thumb.pos}};
+                            background-size: {{thumb.size}}">
+                    
+                    <div class="thumb-overlay">
+                        <strong>{{thumb.name}}</strong>
+                        <div class="zoom-icon"></div>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
-        </a>
+        </div>
         
-        {% endfor %}
-    
+        <div class="work-wrap">
+            <div class="work-container">
+            <div class="work-return">{% include icons/icon-back.html %}</div>
+                <h4>Do Work</h4>
+                <div style="width: 600px; height: 500px; background: #ccc;"></div>
+                <p>To be or not to be.</p>
+            </div>
+        </div>
+        
     </div>
 
 </section>
